@@ -1,9 +1,6 @@
 import Layout from "@components/layout";
-import axios from "axios";
-import UserList from "@components/user/user-list";
 import { getSession } from "next-auth/react";
 import Seo from "@components/common/seo";
-import Container from "@components/ui/container";
 import UserInfo from "@components/user/user-info";
 import UserBalance from "@components/user/user-balance";
 import ProductList from "@components/product/product-list";

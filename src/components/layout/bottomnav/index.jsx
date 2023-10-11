@@ -22,7 +22,7 @@ const MobileNavigation = () => {
 
   return (
     <>
-      <div className=" bg-orange-300/10 lg:hidden fixed z-30 -bottom-0.5 flex items-center justify-between shadow-bottomNavigation w-full h-14 px-4 ">
+      <div className=" bg-orange-50 lg:hidden fixed z-30 -bottom-0.5 flex items-center justify-between shadow-bottomNavigation w-full h-14 px-4 ">
         <Link
           href="/"
           className="inline-flex flex-col items-center justify-center"

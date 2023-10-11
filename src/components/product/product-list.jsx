@@ -29,11 +29,11 @@ const ProductList = () => {
   return (
     <>
       {products.length > 0 ? (
-        <div className="flex flex-col py-4 px-4">
+        <div className="flex flex-col pt-4 pb-8 px-4">
           {products.map((item, idx) => (
             <div
               key={idx}
-              className="flex flex-row items-start text-left  mb-4"
+              className="flex flex-row items-start text-left  mb-3"
             >
               <div className="mr-4 h-32 w-32 flex-none">
                 <img

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Alert from "@components/ui/alert";
 import { useForm } from "react-hook-form";
-import { getSession } from "next-auth/react";
 import { useRouter } from "next/router";
-import Seo from "@components/common/seo";
 import Container from "@components/ui/container";
 import { useHookFormMask } from "use-mask-input";
 import Link from "@components/ui/link";
@@ -62,7 +60,7 @@ export default function RegisterForm() {
 
   return (
     <Container>
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center h-screen">
         <div className="m-auto max-w-md w-full py-8 px-4">
           <div className="inline-flex justify-center w-full mb-8 ">
             <img
@@ -71,11 +69,12 @@ export default function RegisterForm() {
               className="w-40 h-40"
             />
           </div>
-          <div className="mt-4  mb-8 text-center">
-            <p className="font-semibold text-indigo-900 text-[13px] bg-amber-100 rounded-lg p-2 ">
+          <div className="my-4 text-center">
+            <p className="font-semibold text-indigo-900 text-[13px]  ">
               Заполните форму ниже, чтобы создать учетную запись
             </p>
           </div>
+
           {error && (
             <Alert
               message={error}

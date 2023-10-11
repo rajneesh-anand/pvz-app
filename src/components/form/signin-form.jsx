@@ -37,17 +37,17 @@ export default function SignInForm({ csrfToken }) {
   }
   return (
     <Container>
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center h-screen">
         <div className="m-auto max-w-md w-full py-8 px-4">
-          <div className="inline-flex justify-center w-full mb-8 ">
+          <div className="inline-flex justify-center w-full">
             <img
               src="/images/hero/pup.svg"
               alt="welcome"
               className="w-40 h-40"
             />
           </div>
-          <div className="mt-4  mb-8 text-center">
-            <p className="font-semibold text-indigo-900 text-[13px] bg-amber-100 rounded-lg p-2 ">
+          <div className="my-4 text-center">
+            <p className="font-semibold text-indigo-900 text-[13px]  ">
               Войдите с помощью номера мобильного телефона и пароля
             </p>
           </div>
