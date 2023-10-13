@@ -8,29 +8,22 @@ const Seo = ({ title, description, canonical, css, js, image }) => (
       content="width=device-width,minimum-scale=1,initial-scale=1"
     />
     <title>{title}</title>
-    <meta name="description" content={description} />
 
-    <meta name="og:type" property="og:type" content="website" />
-    <meta name="og:title" property="og:title" content={title} />
+    <meta name="description" content={description} />
+    <meta property="og:site_name" content="yasha64" />
+    <meta property="og:type" name="og:type" content="website" />
+    <meta property="og:title" name="og:title" content={title} />
     <meta
-      name="og:description"
       property="og:description"
+      name="og:description"
       content={description}
     />
-    <meta name="og:url" property="og:url" content={canonical} />
-    <meta property="og:site_name" content="tswan" />
+    <meta property="og:url" name="og:url" content={canonical} />
     <meta
       property="og:image"
       itemProp="image"
-      content={`${process.env.NEXTAUTH_URL}/images/openGraph/og.png`}
+      content={`${process.env.NEXTAUTH_URL}/images/openGraph/og-image.png`}
     />
-    <meta
-      property="og:image:secure_url"
-      content={`${process.env.NEXTAUTH_URL}/images/openGraph/og.png`}
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="200" />
 
     <meta name="twitter:card" property="twitter:card" content="summary" />
     <meta name="twitter:url" content={process.env.NEXTAUTH_URL} />
@@ -46,7 +39,7 @@ const Seo = ({ title, description, canonical, css, js, image }) => (
     <meta
       name="twitter:image"
       property="twitter:image"
-      content={`${process.env.NEXTAUTH_URL}/images/openGraph/og.png`}
+      content={`${process.env.NEXTAUTH_URL}/images/openGraph/og-image.png`}
     />
 
     {canonical && <link rel="canonical" href={canonical} />}

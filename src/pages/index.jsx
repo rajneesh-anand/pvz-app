@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <>
       <Seo
-        title="home"
+        title="Yasha app"
         description="Выиграйте захватывающие призы , Купите продукт И выиграйте монеты"
         canonical="/"
       />
